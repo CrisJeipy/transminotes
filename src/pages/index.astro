@@ -1,55 +1,48 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Login from '../components/login.astro'
-
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Login from "../components/login.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-	<main>
-		<Login />
-			
-	</main>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <main>
+    <Login />
+  </main>
 </Layout>
 
 <style is:global>
+  html {
+    background-image: url("./images/fondo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
 
-	html {
-		background-image: url('./images/fondo.svg');
-		background-size: cover ;
-		background-repeat: no-repeat;
-		font-family: "Inter", sans-serif;
-		
-	}
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		
-		color: white;
-	
-		font-family: "Inter", sans-serif;
-		
+    color: white;
 
-		
-	}
-	
-	
-	h1 {
-		font-size: 64px;
-		font-weight: 800;
-		
-	}
+    font-family: "Inter", sans-serif;
+  }
 
-	span {
-		font-family: "Inter", sans-serif;
-		font-size: 14px;
-		font-weight: 400;
-		color: #9CA3AF;
-		line-height: 20px;
-	}
-	
+  h1 {
+    font-size: 64px;
+    font-weight: 800;
+  }
+
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9ca3af;
+    line-height: 20px;
+  }
 </style>
